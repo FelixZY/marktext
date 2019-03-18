@@ -132,6 +132,9 @@ class Preference {
     if (!settings.titleBarStyle || !/^(native|csd|custom)$/.test(settings.titleBarStyle)) {
       settings.titleBarStyle = 'csd'
     }
+    if (!settings.windowOpacity || settings.windowOpacity < 0.3 || settings.windowOpacity > 1.0) {
+      settings.windowOpacity = 1.0
+    }
     if (brokenSettings) {
       log('Broken settings detected; fallback to default value(s).')
     }

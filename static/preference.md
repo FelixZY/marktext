@@ -14,6 +14,8 @@ Edit and save to update preferences. You can only change the JSON below!
 
 - **titleBarStyle**: *String* `csd` (macOS only), `custom` or `native`
 
+- **windowOpacity**: *float* 0.3-1.0 (macOS and windows only)
+
 ```json
 {
   "fontSize": "16px",
@@ -36,7 +38,8 @@ Edit and save to update preferences. You can only change the JSON below!
   "tabSize": 4,
   "textDirection": "ltr",
   "titleBarStyle": "csd",
-  "openFilesInNewWindow": true
+  "openFilesInNewWindow": true,
+  "windowOpacity": 1.0
 }
 ```
 

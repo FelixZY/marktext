@@ -15,7 +15,9 @@ export const defaultWinOptions = {
   useContentSize: true,
   show: false,
   frame: false,
-  titleBarStyle: 'hidden'
+  titleBarStyle: 'hidden',
+  transparent: true,
+  opacity: 1.0
 }
 
 export const EXTENSIONS = [

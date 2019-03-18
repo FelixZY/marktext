@@ -72,6 +72,9 @@ class AppWindow {
       winOpt.titleBarStyle = ''
     }
 
+    const { windowOpacity } = userPreference.getAll()
+    winOpt.opacity = windowOpacity;
+
     const win = new BrowserWindow(winOpt)
     windows.set(win.id, {
       win,
